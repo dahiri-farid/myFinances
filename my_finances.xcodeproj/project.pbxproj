@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		47BEA2C91B92F070007857C6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 47BEA2C81B92F070007857C6 /* main.m */; };
+		47BEA2CC1B92F070007857C6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 47BEA2CB1B92F070007857C6 /* AppDelegate.m */; };
+		47BEA2CF1B92F070007857C6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47BEA2CE1B92F070007857C6 /* ViewController.m */; };
+		47BEA2D41B92F070007857C6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47BEA2D31B92F070007857C6 /* Images.xcassets */; };
+		47BEA2D71B92F070007857C6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47BEA2D51B92F070007857C6 /* LaunchScreen.xib */; };
+		47BEA2E31B92F070007857C6 /* my_financesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 47BEA2E21B92F070007857C6 /* my_financesTests.m */; };
+		47BEA2EF1B92F0BD007857C6 /* DFBankAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 47BEA2EE1B92F0BD007857C6 /* DFBankAccount.m */; };
+		47BEA2F31B92F26A007857C6 /* DFTabBarNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47BEA2F21B92F26A007857C6 /* DFTabBarNavigationController.m */; };
+		47BEA2F81B92F6A2007857C6 /* DFBankAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47BEA2F61B92F6A2007857C6 /* DFBankAccountViewController.m */; };
+		47BEA3021B93170A007857C6 /* DFIncomesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47BEA3011B93170A007857C6 /* DFIncomesViewController.m */; };
+		47BEA3051B9318CD007857C6 /* DFAddIncomeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47BEA3041B9318CD007857C6 /* DFAddIncomeTableViewController.m */; };
+		47BEA30A1B931A21007857C6 /* DFInputTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 47BEA3081B931A21007857C6 /* DFInputTextCell.m */; };
+		47BEA30B1B931A21007857C6 /* DFInputTextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47BEA3091B931A21007857C6 /* DFInputTextCell.xib */; };
+		47BEA30E1B932B96007857C6 /* DFTitleSubtitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 47BEA30D1B932B96007857C6 /* DFTitleSubtitleCell.m */; };
+		47BEA3111B932CD0007857C6 /* DFExpensesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47BEA3101B932CD0007857C6 /* DFExpensesViewController.m */; };
+		47BEA3141B932E09007857C6 /* DFReportsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47BEA3131B932E09007857C6 /* DFReportsViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		47BEA2DD1B92F070007857C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 47BEA2BB1B92F070007857C6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 47BEA2C21B92F070007857C6;
+			remoteInfo = my_finances;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		47BEA2C31B92F070007857C6 /* my_finances.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = my_finances.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		47BEA2C71B92F070007857C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47BEA2C81B92F070007857C6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		47BEA2CA1B92F070007857C6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		47BEA2CB1B92F070007857C6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		47BEA2CD1B92F070007857C6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		47BEA2CE1B92F070007857C6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		47BEA2D31B92F070007857C6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		47BEA2D61B92F070007857C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		47BEA2DC1B92F070007857C6 /* my_financesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = my_financesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		47BEA2E11B92F070007857C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47BEA2E21B92F070007857C6 /* my_financesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = my_financesTests.m; sourceTree = "<group>"; };
+		47BEA2ED1B92F0BD007857C6 /* DFBankAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFBankAccount.h; sourceTree = "<group>"; };
+		47BEA2EE1B92F0BD007857C6 /* DFBankAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFBankAccount.m; sourceTree = "<group>"; };
+		47BEA2F11B92F26A007857C6 /* DFTabBarNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFTabBarNavigationController.h; sourceTree = "<group>"; };
+		47BEA2F21B92F26A007857C6 /* DFTabBarNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFTabBarNavigationController.m; sourceTree = "<group>"; };
+		47BEA2F51B92F6A2007857C6 /* DFBankAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFBankAccountViewController.h; sourceTree = "<group>"; };
+		47BEA2F61B92F6A2007857C6 /* DFBankAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFBankAccountViewController.m; sourceTree = "<group>"; };
+		47BEA3001B93170A007857C6 /* DFIncomesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFIncomesViewController.h; sourceTree = "<group>"; };
+		47BEA3011B93170A007857C6 /* DFIncomesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFIncomesViewController.m; sourceTree = "<group>"; };
+		47BEA3031B9318CD007857C6 /* DFAddIncomeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFAddIncomeTableViewController.h; sourceTree = "<group>"; };
+		47BEA3041B9318CD007857C6 /* DFAddIncomeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFAddIncomeTableViewController.m; sourceTree = "<group>"; };
+		47BEA3071B931A21007857C6 /* DFInputTextCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFInputTextCell.h; sourceTree = "<group>"; };
+		47BEA3081B931A21007857C6 /* DFInputTextCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFInputTextCell.m; sourceTree = "<group>"; };
+		47BEA3091B931A21007857C6 /* DFInputTextCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DFInputTextCell.xib; sourceTree = "<group>"; };
+		47BEA30C1B932B96007857C6 /* DFTitleSubtitleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFTitleSubtitleCell.h; sourceTree = "<group>"; };
+		47BEA30D1B932B96007857C6 /* DFTitleSubtitleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFTitleSubtitleCell.m; sourceTree = "<group>"; };
+		47BEA30F1B932CD0007857C6 /* DFExpensesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFExpensesViewController.h; sourceTree = "<group>"; };
+		47BEA3101B932CD0007857C6 /* DFExpensesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFExpensesViewController.m; sourceTree = "<group>"; };
+		47BEA3121B932E09007857C6 /* DFReportsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFReportsViewController.h; sourceTree = "<group>"; };
+		47BEA3131B932E09007857C6 /* DFReportsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFReportsViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		47BEA2C01B92F070007857C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47BEA2D91B92F070007857C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		47BEA2BA1B92F070007857C6 = {
+			isa = PBXGroup;
+			children = (
+				47BEA2C51B92F070007857C6 /* my_finances */,
+				47BEA2DF1B92F070007857C6 /* my_financesTests */,
+				47BEA2C41B92F070007857C6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		47BEA2C41B92F070007857C6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				47BEA2C31B92F070007857C6 /* my_finances.app */,
+				47BEA2DC1B92F070007857C6 /* my_financesTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		47BEA2C51B92F070007857C6 /* my_finances */ = {
+			isa = PBXGroup;
+			children = (
+				47BEA3061B9319B8007857C6 /* Views */,
+				47BEA2F01B92F22F007857C6 /* View Controllers */,
+				47BEA2EC1B92F097007857C6 /* Model */,
+				47BEA2CA1B92F070007857C6 /* AppDelegate.h */,
+				47BEA2CB1B92F070007857C6 /* AppDelegate.m */,
+				47BEA2CD1B92F070007857C6 /* ViewController.h */,
+				47BEA2CE1B92F070007857C6 /* ViewController.m */,
+				47BEA2D31B92F070007857C6 /* Images.xcassets */,
+				47BEA2D51B92F070007857C6 /* LaunchScreen.xib */,
+				47BEA2C61B92F070007857C6 /* Supporting Files */,
+			);
+			path = my_finances;
+			sourceTree = "<group>";
+		};
+		47BEA2C61B92F070007857C6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				47BEA2C71B92F070007857C6 /* Info.plist */,
+				47BEA2C81B92F070007857C6 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		47BEA2DF1B92F070007857C6 /* my_financesTests */ = {
+			isa = PBXGroup;
+			children = (
+				47BEA2E21B92F070007857C6 /* my_financesTests.m */,
+				47BEA2E01B92F070007857C6 /* Supporting Files */,
+			);
+			path = my_financesTests;
+			sourceTree = "<group>";
+		};
+		47BEA2E01B92F070007857C6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				47BEA2E11B92F070007857C6 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		47BEA2EC1B92F097007857C6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				47BEA2ED1B92F0BD007857C6 /* DFBankAccount.h */,
+				47BEA2EE1B92F0BD007857C6 /* DFBankAccount.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		47BEA2F01B92F22F007857C6 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				47BEA2FA1B9316AF007857C6 /* Expences */,
+				47BEA2FB1B9316AF007857C6 /* Incomes */,
+				47BEA2FC1B9316AF007857C6 /* Reports */,
+				47BEA2F41B92F612007857C6 /* Bank Account */,
+				47BEA2F11B92F26A007857C6 /* DFTabBarNavigationController.h */,
+				47BEA2F21B92F26A007857C6 /* DFTabBarNavigationController.m */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		47BEA2F41B92F612007857C6 /* Bank Account */ = {
+			isa = PBXGroup;
+			children = (
+				47BEA2F51B92F6A2007857C6 /* DFBankAccountViewController.h */,
+				47BEA2F61B92F6A2007857C6 /* DFBankAccountViewController.m */,
+			);
+			path = "Bank Account";
+			sourceTree = "<group>";
+		};
+		47BEA2FA1B9316AF007857C6 /* Expences */ = {
+			isa = PBXGroup;
+			children = (
+				47BEA30F1B932CD0007857C6 /* DFExpensesViewController.h */,
+				47BEA3101B932CD0007857C6 /* DFExpensesViewController.m */,
+			);
+			path = Expences;
+			sourceTree = "<group>";
+		};
+		47BEA2FB1B9316AF007857C6 /* Incomes */ = {
+			isa = PBXGroup;
+			children = (
+				47BEA3001B93170A007857C6 /* DFIncomesViewController.h */,
+				47BEA3011B93170A007857C6 /* DFIncomesViewController.m */,
+				47BEA3031B9318CD007857C6 /* DFAddIncomeTableViewController.h */,
+				47BEA3041B9318CD007857C6 /* DFAddIncomeTableViewController.m */,
+			);
+			path = Incomes;
+			sourceTree = "<group>";
+		};
+		47BEA2FC1B9316AF007857C6 /* Reports */ = {
+			isa = PBXGroup;
+			children = (
+				47BEA3121B932E09007857C6 /* DFReportsViewController.h */,
+				47BEA3131B932E09007857C6 /* DFReportsViewController.m */,
+			);
+			path = Reports;
+			sourceTree = "<group>";
+		};
+		47BEA3061B9319B8007857C6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				47BEA3071B931A21007857C6 /* DFInputTextCell.h */,
+				47BEA3081B931A21007857C6 /* DFInputTextCell.m */,
+				47BEA3091B931A21007857C6 /* DFInputTextCell.xib */,
+				47BEA30C1B932B96007857C6 /* DFTitleSubtitleCell.h */,
+				47BEA30D1B932B96007857C6 /* DFTitleSubtitleCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		47BEA2C21B92F070007857C6 /* my_finances */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47BEA2E61B92F070007857C6 /* Build configuration list for PBXNativeTarget "my_finances" */;
+			buildPhases = (
+				47BEA2BF1B92F070007857C6 /* Sources */,
+				47BEA2C01B92F070007857C6 /* Frameworks */,
+				47BEA2C11B92F070007857C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = my_finances;
+			productName = my_finances;
+			productReference = 47BEA2C31B92F070007857C6 /* my_finances.app */;
+			productType = "com.apple.product-type.application";
+		};
+		47BEA2DB1B92F070007857C6 /* my_financesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47BEA2E91B92F070007857C6 /* Build configuration list for PBXNativeTarget "my_financesTests" */;
+			buildPhases = (
+				47BEA2D81B92F070007857C6 /* Sources */,
+				47BEA2D91B92F070007857C6 /* Frameworks */,
+				47BEA2DA1B92F070007857C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				47BEA2DE1B92F070007857C6 /* PBXTargetDependency */,
+			);
+			name = my_financesTests;
+			productName = my_financesTests;
+			productReference = 47BEA2DC1B92F070007857C6 /* my_financesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		47BEA2BB1B92F070007857C6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Dahiri Farid";
+				TargetAttributes = {
+					47BEA2C21B92F070007857C6 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					47BEA2DB1B92F070007857C6 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 47BEA2C21B92F070007857C6;
+					};
+				};
+			};
+			buildConfigurationList = 47BEA2BE1B92F070007857C6 /* Build configuration list for PBXProject "my_finances" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 47BEA2BA1B92F070007857C6;
+			productRefGroup = 47BEA2C41B92F070007857C6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				47BEA2C21B92F070007857C6 /* my_finances */,
+				47BEA2DB1B92F070007857C6 /* my_financesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		47BEA2C11B92F070007857C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47BEA2D71B92F070007857C6 /* LaunchScreen.xib in Resources */,
+				47BEA2D41B92F070007857C6 /* Images.xcassets in Resources */,
+				47BEA30B1B931A21007857C6 /* DFInputTextCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47BEA2DA1B92F070007857C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		47BEA2BF1B92F070007857C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47BEA3051B9318CD007857C6 /* DFAddIncomeTableViewController.m in Sources */,
+				47BEA2F81B92F6A2007857C6 /* DFBankAccountViewController.m in Sources */,
+				47BEA2CF1B92F070007857C6 /* ViewController.m in Sources */,
+				47BEA2EF1B92F0BD007857C6 /* DFBankAccount.m in Sources */,
+				47BEA3111B932CD0007857C6 /* DFExpensesViewController.m in Sources */,
+				47BEA30E1B932B96007857C6 /* DFTitleSubtitleCell.m in Sources */,
+				47BEA2F31B92F26A007857C6 /* DFTabBarNavigationController.m in Sources */,
+				47BEA30A1B931A21007857C6 /* DFInputTextCell.m in Sources */,
+				47BEA3141B932E09007857C6 /* DFReportsViewController.m in Sources */,
+				47BEA3021B93170A007857C6 /* DFIncomesViewController.m in Sources */,
+				47BEA2CC1B92F070007857C6 /* AppDelegate.m in Sources */,
+				47BEA2C91B92F070007857C6 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47BEA2D81B92F070007857C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47BEA2E31B92F070007857C6 /* my_financesTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		47BEA2DE1B92F070007857C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 47BEA2C21B92F070007857C6 /* my_finances */;
+			targetProxy = 47BEA2DD1B92F070007857C6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		47BEA2D51B92F070007857C6 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				47BEA2D61B92F070007857C6 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		47BEA2E41B92F070007857C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		47BEA2E51B92F070007857C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		47BEA2E71B92F070007857C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = my_finances/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		47BEA2E81B92F070007857C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = my_finances/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		47BEA2EA1B92F070007857C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = my_financesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/my_finances.app/my_finances";
+			};
+			name = Debug;
+		};
+		47BEA2EB1B92F070007857C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = my_financesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/my_finances.app/my_finances";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		47BEA2BE1B92F070007857C6 /* Build configuration list for PBXProject "my_finances" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47BEA2E41B92F070007857C6 /* Debug */,
+				47BEA2E51B92F070007857C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47BEA2E61B92F070007857C6 /* Build configuration list for PBXNativeTarget "my_finances" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47BEA2E71B92F070007857C6 /* Debug */,
+				47BEA2E81B92F070007857C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		47BEA2E91B92F070007857C6 /* Build configuration list for PBXNativeTarget "my_financesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47BEA2EA1B92F070007857C6 /* Debug */,
+				47BEA2EB1B92F070007857C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 47BEA2BB1B92F070007857C6 /* Project object */;
+}
