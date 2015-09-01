@@ -12,6 +12,7 @@
 #import "DFIncomesViewController.h"
 #import "DFExpensesViewController.h"
 #import "DFReportsViewController.h"
+#import "DFDataManager.h"
 
 @interface AppDelegate ()
 
@@ -71,6 +72,7 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    [DFDataManager.instance cleapUp];
 }
 
 @end

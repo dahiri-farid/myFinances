@@ -7,6 +7,7 @@
 //
 
 #import "DFExpensesViewController.h"
+#import "DFAddExpenceViewController.h"
 #import "DFTitleSubtitleCell.h"
 
 @interface DFExpensesViewController ()
@@ -113,7 +114,15 @@
 
 - (void)addExpense:(id)sender
 {
+    DFAddExpenceViewController* addExpenseVC = DFAddExpenceViewController.vc;
+    UINavigationController* nc = [UINavigationController.alloc initWithRootViewController:addExpenseVC];
+    [self presentViewController:nc animated:YES completion:nil];
     
+    __weak typeof (self)weakSelf = self;
+    addExpenseVC.dismissBlock = ^
+    {
+        [weakSelf dismissViewControllerAnimated:YES completion:nil];
+    };
 }
 
 @end

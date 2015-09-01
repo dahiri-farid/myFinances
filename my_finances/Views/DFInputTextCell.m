@@ -8,7 +8,7 @@
 
 #import "DFInputTextCell.h"
 
-@interface DFInputTextCell ()
+@interface DFInputTextCell () <UITextFieldDelegate>
 
 @property (nonatomic, strong)   IBOutlet    UITextField* ibFieldValue;
 
@@ -33,16 +33,64 @@
 
 - (void)awakeFromNib {
     // Initialization code
+    self.ibFieldValue.delegate = self;
 }
 
 - (void)updateWithFieldValue:(NSString *)aFieldValue
-      fieldValuePlaceholder:(NSString *)aFieldValuePlaceholder
-                  inputType:(UIKeyboardType)aKeyboardType
+       fieldValuePlaceholder:(NSString *)aFieldValuePlaceholder
+                   inputType:(DFInputCellType)aInputType
 {
-    self.ibFieldValue.keyboardType = aKeyboardType;
+    self.selectionStyle = UITableViewCellSelectionStyleNone;
+    
+    if (aInputType == DFInputCellDecimalPad)
+    {
+        self.ibFieldValue.keyboardType = UIKeyboardTypeNumberPad;
+    }
+    else if (aInputType == DFInputCellText)
+    {
+        self.ibFieldValue.keyboardType = UIKeyboardTypeAlphabet;
+    }
+    else if (aInputType == DFInputCellCustom)
+    {
+        self.ibFieldValue.userInteractionEnabled = NO;
+    }
+    else
+    {
+        NSAssert(NO, @"Not Implemented!");
+    }
     
     self.ibFieldValue.text = aFieldValue;
     self.ibFieldValue.placeholder = aFieldValuePlaceholder;
+}
+
+#pragma mark - UITextFieldDelegate
+
+- (void)textFieldDidBeginEditing:(UITextField *)textField
+{
+    NSParameterAssert(textField == self.ibFieldValue);
+    
+    if (self.onTextInputBegin)
+        self.onTextInputBegin(textField.text);
+}
+
+- (BOOL)textField:(UITextField *)textField
+shouldChangeCharactersInRange:(NSRange)range
+replacementString:(NSString *)string
+{
+    NSParameterAssert(self.ibFieldValue == textField);
+    NSString* replacement = [textField.text stringByReplacingCharactersInRange:range withString:string];
+    if (self.onTextInputChange)
+        return self.onTextInputChange(replacement);
+    
+    return YES;
+}
+
+- (void)textFieldDidEndEditing:(UITextField *)textField
+{
+    NSParameterAssert(self.ibFieldValue == textField);
+    
+    if (self.onTextInputFinish)
+        self.onTextInputFinish(textField.text);
 }
 
 @end

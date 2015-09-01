@@ -21,6 +21,19 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		474FDD0E1B933BBE0068419C /* DFCDBankAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 474FDD0D1B933BBE0068419C /* DFCDBankAccount.m */; };
+		474FDD111B933BC60068419C /* _DFCDBankAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 474FDD101B933BC60068419C /* _DFCDBankAccount.m */; };
+		474FDD151B933C290068419C /* DFDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 474FDD141B933C290068419C /* DFDataManager.m */; };
+		4785FF811B938EAF00D15D2E /* DFAddExpenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4785FF801B938EAF00D15D2E /* DFAddExpenceViewController.m */; };
+		4785FF851B94F30F00D15D2E /* DFSegmentedControlCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4785FF831B94F30F00D15D2E /* DFSegmentedControlCell.m */; };
+		4785FF861B94F30F00D15D2E /* DFSegmentedControlCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4785FF841B94F30F00D15D2E /* DFSegmentedControlCell.xib */; };
+		4785FF8A1B962AB700D15D2E /* NSString+Validation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4785FF891B962AB700D15D2E /* NSString+Validation.m */; };
+		4785FF931B963F3900D15D2E /* _DFCDExpense.m in Sources */ = {isa = PBXBuildFile; fileRef = 4785FF8C1B963F3900D15D2E /* _DFCDExpense.m */; };
+		4785FF941B963F3900D15D2E /* _DFCDIncome.m in Sources */ = {isa = PBXBuildFile; fileRef = 4785FF8E1B963F3900D15D2E /* _DFCDIncome.m */; };
+		4785FF951B963F3900D15D2E /* DFCDExpense.m in Sources */ = {isa = PBXBuildFile; fileRef = 4785FF901B963F3900D15D2E /* DFCDExpense.m */; };
+		4785FF961B963F3900D15D2E /* DFCDIncome.m in Sources */ = {isa = PBXBuildFile; fileRef = 4785FF921B963F3900D15D2E /* DFCDIncome.m */; };
+		4785FF991B963F9D00D15D2E /* DFIncome.m in Sources */ = {isa = PBXBuildFile; fileRef = 4785FF981B963F9D00D15D2E /* DFIncome.m */; };
+		4785FF9C1B963FB300D15D2E /* DFExpense.m in Sources */ = {isa = PBXBuildFile; fileRef = 4785FF9B1B963FB300D15D2E /* DFExpense.m */; };
 		47A7377B1B93392E0060CE04 /* DFCoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 47A737791B93392E0060CE04 /* DFCoreDataModel.xcdatamodeld */; };
 		47BEA2C91B92F070007857C6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 47BEA2C81B92F070007857C6 /* main.m */; };
 		47BEA2CC1B92F070007857C6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 47BEA2CB1B92F070007857C6 /* AppDelegate.m */; };
@@ -54,6 +67,32 @@
 
 /* Begin PBXFileReference section */
 		3E0B1E11709F3CF89D437897 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		474FDD0C1B933BBE0068419C /* DFCDBankAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFCDBankAccount.h; sourceTree = "<group>"; };
+		474FDD0D1B933BBE0068419C /* DFCDBankAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFCDBankAccount.m; sourceTree = "<group>"; };
+		474FDD0F1B933BC60068419C /* _DFCDBankAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _DFCDBankAccount.h; sourceTree = "<group>"; };
+		474FDD101B933BC60068419C /* _DFCDBankAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _DFCDBankAccount.m; sourceTree = "<group>"; };
+		474FDD131B933C290068419C /* DFDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFDataManager.h; sourceTree = "<group>"; };
+		474FDD141B933C290068419C /* DFDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFDataManager.m; sourceTree = "<group>"; };
+		474FDD191B933D470068419C /* DFMacroUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DFMacroUtils.h; sourceTree = "<group>"; };
+		4785FF7F1B938EAF00D15D2E /* DFAddExpenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFAddExpenceViewController.h; sourceTree = "<group>"; };
+		4785FF801B938EAF00D15D2E /* DFAddExpenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFAddExpenceViewController.m; sourceTree = "<group>"; };
+		4785FF821B94F30F00D15D2E /* DFSegmentedControlCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFSegmentedControlCell.h; sourceTree = "<group>"; };
+		4785FF831B94F30F00D15D2E /* DFSegmentedControlCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFSegmentedControlCell.m; sourceTree = "<group>"; };
+		4785FF841B94F30F00D15D2E /* DFSegmentedControlCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DFSegmentedControlCell.xib; sourceTree = "<group>"; };
+		4785FF881B962AB700D15D2E /* NSString+Validation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Validation.h"; sourceTree = "<group>"; };
+		4785FF891B962AB700D15D2E /* NSString+Validation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Validation.m"; sourceTree = "<group>"; };
+		4785FF8B1B963F3900D15D2E /* _DFCDExpense.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _DFCDExpense.h; sourceTree = "<group>"; };
+		4785FF8C1B963F3900D15D2E /* _DFCDExpense.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _DFCDExpense.m; sourceTree = "<group>"; };
+		4785FF8D1B963F3900D15D2E /* _DFCDIncome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _DFCDIncome.h; sourceTree = "<group>"; };
+		4785FF8E1B963F3900D15D2E /* _DFCDIncome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _DFCDIncome.m; sourceTree = "<group>"; };
+		4785FF8F1B963F3900D15D2E /* DFCDExpense.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFCDExpense.h; sourceTree = "<group>"; };
+		4785FF901B963F3900D15D2E /* DFCDExpense.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFCDExpense.m; sourceTree = "<group>"; };
+		4785FF911B963F3900D15D2E /* DFCDIncome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFCDIncome.h; sourceTree = "<group>"; };
+		4785FF921B963F3900D15D2E /* DFCDIncome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFCDIncome.m; sourceTree = "<group>"; };
+		4785FF971B963F9D00D15D2E /* DFIncome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFIncome.h; sourceTree = "<group>"; };
+		4785FF981B963F9D00D15D2E /* DFIncome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFIncome.m; sourceTree = "<group>"; };
+		4785FF9A1B963FB300D15D2E /* DFExpense.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFExpense.h; sourceTree = "<group>"; };
+		4785FF9B1B963FB300D15D2E /* DFExpense.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFExpense.m; sourceTree = "<group>"; };
 		47A7377A1B93392E0060CE04 /* DFCoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DFCoreDataModel.xcdatamodel; sourceTree = "<group>"; };
 		47BEA2C31B92F070007857C6 /* my_finances.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = my_finances.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47BEA2C71B92F070007857C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -119,9 +158,47 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		474FDD121B933C180068419C /* Data Manager */ = {
+			isa = PBXGroup;
+			children = (
+				474FDD131B933C290068419C /* DFDataManager.h */,
+				474FDD141B933C290068419C /* DFDataManager.m */,
+			);
+			path = "Data Manager";
+			sourceTree = "<group>";
+		};
+		474FDD171B933C8A0068419C /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				474FDD191B933D470068419C /* DFMacroUtils.h */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		4785FF871B962AA100D15D2E /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				4785FF881B962AB700D15D2E /* NSString+Validation.h */,
+				4785FF891B962AB700D15D2E /* NSString+Validation.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
 		47A737781B93392E0060CE04 /* CoreDataModel */ = {
 			isa = PBXGroup;
 			children = (
+				4785FF8B1B963F3900D15D2E /* _DFCDExpense.h */,
+				4785FF8C1B963F3900D15D2E /* _DFCDExpense.m */,
+				4785FF8D1B963F3900D15D2E /* _DFCDIncome.h */,
+				4785FF8E1B963F3900D15D2E /* _DFCDIncome.m */,
+				4785FF8F1B963F3900D15D2E /* DFCDExpense.h */,
+				4785FF901B963F3900D15D2E /* DFCDExpense.m */,
+				4785FF911B963F3900D15D2E /* DFCDIncome.h */,
+				4785FF921B963F3900D15D2E /* DFCDIncome.m */,
+				474FDD0F1B933BC60068419C /* _DFCDBankAccount.h */,
+				474FDD101B933BC60068419C /* _DFCDBankAccount.m */,
+				474FDD0C1B933BBE0068419C /* DFCDBankAccount.h */,
+				474FDD0D1B933BBE0068419C /* DFCDBankAccount.m */,
 				47A737791B93392E0060CE04 /* DFCoreDataModel.xcdatamodeld */,
 			);
 			path = CoreDataModel;
@@ -150,6 +227,9 @@
 		47BEA2C51B92F070007857C6 /* my_finances */ = {
 			isa = PBXGroup;
 			children = (
+				4785FF871B962AA100D15D2E /* Categories */,
+				474FDD171B933C8A0068419C /* Common */,
+				474FDD121B933C180068419C /* Data Manager */,
 				47A737781B93392E0060CE04 /* CoreDataModel */,
 				47BEA3061B9319B8007857C6 /* Views */,
 				47BEA2F01B92F22F007857C6 /* View Controllers */,
@@ -196,6 +276,10 @@
 			children = (
 				47BEA2ED1B92F0BD007857C6 /* DFBankAccount.h */,
 				47BEA2EE1B92F0BD007857C6 /* DFBankAccount.m */,
+				4785FF971B963F9D00D15D2E /* DFIncome.h */,
+				4785FF981B963F9D00D15D2E /* DFIncome.m */,
+				4785FF9A1B963FB300D15D2E /* DFExpense.h */,
+				4785FF9B1B963FB300D15D2E /* DFExpense.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -227,6 +311,8 @@
 			children = (
 				47BEA30F1B932CD0007857C6 /* DFExpensesViewController.h */,
 				47BEA3101B932CD0007857C6 /* DFExpensesViewController.m */,
+				4785FF7F1B938EAF00D15D2E /* DFAddExpenceViewController.h */,
+				4785FF801B938EAF00D15D2E /* DFAddExpenceViewController.m */,
 			);
 			path = Expences;
 			sourceTree = "<group>";
@@ -259,6 +345,9 @@
 				47BEA3091B931A21007857C6 /* DFInputTextCell.xib */,
 				47BEA30C1B932B96007857C6 /* DFTitleSubtitleCell.h */,
 				47BEA30D1B932B96007857C6 /* DFTitleSubtitleCell.m */,
+				4785FF821B94F30F00D15D2E /* DFSegmentedControlCell.h */,
+				4785FF831B94F30F00D15D2E /* DFSegmentedControlCell.m */,
+				4785FF841B94F30F00D15D2E /* DFSegmentedControlCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -361,6 +450,7 @@
 			files = (
 				47BEA2D71B92F070007857C6 /* LaunchScreen.xib in Resources */,
 				47BEA2D41B92F070007857C6 /* Images.xcassets in Resources */,
+				4785FF861B94F30F00D15D2E /* DFSegmentedControlCell.xib in Resources */,
 				47BEA30B1B931A21007857C6 /* DFInputTextCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -456,15 +546,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				47BEA3051B9318CD007857C6 /* DFAddIncomeTableViewController.m in Sources */,
+				4785FF931B963F3900D15D2E /* _DFCDExpense.m in Sources */,
 				47BEA2F81B92F6A2007857C6 /* DFBankAccountViewController.m in Sources */,
+				4785FF961B963F3900D15D2E /* DFCDIncome.m in Sources */,
+				4785FF9C1B963FB300D15D2E /* DFExpense.m in Sources */,
 				47BEA2CF1B92F070007857C6 /* ViewController.m in Sources */,
+				474FDD111B933BC60068419C /* _DFCDBankAccount.m in Sources */,
 				47BEA2EF1B92F0BD007857C6 /* DFBankAccount.m in Sources */,
+				474FDD0E1B933BBE0068419C /* DFCDBankAccount.m in Sources */,
+				4785FF811B938EAF00D15D2E /* DFAddExpenceViewController.m in Sources */,
+				4785FF8A1B962AB700D15D2E /* NSString+Validation.m in Sources */,
+				4785FF991B963F9D00D15D2E /* DFIncome.m in Sources */,
 				47BEA3111B932CD0007857C6 /* DFExpensesViewController.m in Sources */,
 				47BEA30E1B932B96007857C6 /* DFTitleSubtitleCell.m in Sources */,
 				47BEA2F31B92F26A007857C6 /* DFTabBarNavigationController.m in Sources */,
+				474FDD151B933C290068419C /* DFDataManager.m in Sources */,
 				47BEA30A1B931A21007857C6 /* DFInputTextCell.m in Sources */,
 				47BEA3141B932E09007857C6 /* DFReportsViewController.m in Sources */,
 				47A7377B1B93392E0060CE04 /* DFCoreDataModel.xcdatamodeld in Sources */,
+				4785FF941B963F3900D15D2E /* _DFCDIncome.m in Sources */,
+				4785FF951B963F3900D15D2E /* DFCDExpense.m in Sources */,
+				4785FF851B94F30F00D15D2E /* DFSegmentedControlCell.m in Sources */,
 				47BEA3021B93170A007857C6 /* DFIncomesViewController.m in Sources */,
 				47BEA2CC1B92F070007857C6 /* AppDelegate.m in Sources */,
 				47BEA2C91B92F070007857C6 /* main.m in Sources */,

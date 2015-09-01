@@ -8,7 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
+typedef NS_ENUM(NSUInteger, DFInputCellType)
+{
+    DFInputCellDecimalPad,
+    DFInputCellText,
+    DFInputCellCustom,
+};
+
 @interface DFInputTextCell : UITableViewCell
+
+@property (nonatomic, copy) void (^onTextInputFinish)(NSString* aText);
+@property (nonatomic, copy) BOOL (^onTextInputChange)(NSString* aText);
+@property (nonatomic, copy) void (^onTextInputBegin)(NSString* aText);
 
 + (instancetype)cell;
 + (NSString *)ID;
@@ -16,6 +27,6 @@
 
 - (void)updateWithFieldValue:(NSString *)aFieldValue
        fieldValuePlaceholder:(NSString *)aFieldValuePlaceholder
-                   inputType:(UIKeyboardType)aKeyboardType;
+                   inputType:(DFInputCellType)aInputType;
 
 @end

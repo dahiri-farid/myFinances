@@ -8,8 +8,13 @@
 
 #import "DFBankAccountViewController.h"
 #import "DFInputTextCell.h"
+#import "DFDataManager.h"
+#import "DFBankAccount.h"
+#import "NSString+Validation.h"
 
 @interface DFBankAccountViewController ()
+
+@property (nonatomic, strong)   UIBarButtonItem* doneBarButtonItem;
 
 @end
 
@@ -20,12 +25,18 @@
     return [[self alloc] initWithStyle:UITableViewStylePlain];
 }
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     self.title = @"Bank Account";
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.tableView.keyboardDismissMode = UIScrollViewKeyboardDismissModeOnDrag;
+    
+    self.doneBarButtonItem =
+    [UIBarButtonItem.alloc initWithBarButtonSystemItem:UIBarButtonSystemItemDone
+                                                target:self
+                                                action:@selector(doneAction:)];
 }
 
 - (void)viewDidLayoutSubviews
@@ -71,14 +82,49 @@
     
     if (indexPath.row == 0)
     {
-        [cell updateWithFieldValue:@""
+        NSString* accountBalance = [NSString stringWithFormat:@"%@", DFDataManager.instance.bankAccount.balance];
+        
+        [cell updateWithFieldValue:accountBalance
              fieldValuePlaceholder:@"Your balance"
-                         inputType:UIKeyboardTypeDecimalPad];
+                         inputType:DFInputCellDecimalPad];
+        
+        __weak typeof (self)weakSelf = self;
+        cell.onTextInputBegin = ^(NSString* aText)
+        {
+            weakSelf.navigationItem.rightBarButtonItem = self.doneBarButtonItem;
+        };
+        
+        cell.onTextInputFinish = ^(NSString* aText)
+        {
+            if (aText.isNumeric)
+            {
+                DFBankAccount* bankAccount = DFDataManager.instance.bankAccount;
+                [bankAccount updateBalance:@(aText.doubleValue)];
+                [DFDataManager.instance saveBankAccount:bankAccount];
+            }
+            else
+            {
+                [[UIAlertView.alloc initWithTitle:@"Error"
+                                          message:@"Invalid amount"
+                                         delegate:nil
+                                cancelButtonTitle:@"Ok"
+                                otherButtonTitles:nil] show];
+                [weakSelf.tableView reloadData];
+            }
+            weakSelf.navigationItem.rightBarButtonItem = nil;
+        };
     }
     
     // Configure the cell...
     
     return cell;
+}
+
+#pragma mark - Custom actions
+
+- (void)doneAction:(id)sender
+{
+    [self.view endEditing:YES];
 }
 
 

@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7701" systemVersion="14F27" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
-    <entity name="DFCDBankAccount" syncable="YES">
+    <entity name="DFCDBankAccount" representedClassName="DFCDBankAccount" syncable="YES">
         <attribute name="balance" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+    </entity>
+    <entity name="DFCDExpense" representedClassName="DFCDExpense" syncable="YES">
+        <attribute name="amount" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="recurrent" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="DFCDIncome" representedClassName="DFCDIncome" syncable="YES">
+        <attribute name="amount" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
         <element name="DFCDBankAccount" positionX="-63" positionY="-18" width="128" height="60"/>
+        <element name="DFCDIncome" positionX="-63" positionY="-9" width="128" height="75"/>
+        <element name="DFCDExpense" positionX="-54" positionY="9" width="128" height="90"/>
     </elements>
 </model>

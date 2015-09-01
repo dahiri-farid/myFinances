@@ -75,13 +75,13 @@
     {
         [cell updateWithFieldValue:@""
              fieldValuePlaceholder:@"Income title"
-                         inputType:UIKeyboardTypeAlphabet];
+                         inputType:DFInputCellText];
     }
     else
     {
         [cell updateWithFieldValue:@""
              fieldValuePlaceholder:@"Income amount"
-                         inputType:UIKeyboardTypeDecimalPad];
+                         inputType:DFInputCellDecimalPad];
     }
     
     // Configure the cell...
