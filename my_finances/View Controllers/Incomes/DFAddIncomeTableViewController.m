@@ -8,8 +8,14 @@
 
 #import "DFAddIncomeTableViewController.h"
 #import "DFInputTextCell.h"
+#import "DFIncome.h"
+#import "DFDataManager.h"
+#import "NSString+Validation.h"
 
 @interface DFAddIncomeTableViewController ()
+
+@property (nonatomic, strong)   NSString* incomeType;
+@property (nonatomic, strong)   NSNumber* incomeAmount;
 
 @end
 
@@ -37,6 +43,9 @@
     
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.tableView.keyboardDismissMode = UIScrollViewKeyboardDismissModeOnDrag;
+    
+    self.incomeAmount = @0;
+    self.incomeType = @"";
 }
 
 - (void)didReceiveMemoryWarning {
@@ -66,6 +75,8 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     DFInputTextCell *cell = (DFInputTextCell*)[tableView dequeueReusableCellWithIdentifier:DFInputTextCell.ID];
     
+    __weak typeof (self)weakSelf = self;
+    
     if (cell == nil)
     {
         cell = DFInputTextCell.cell;
@@ -73,15 +84,50 @@
     
     if (indexPath.row == 0)
     {
-        [cell updateWithFieldValue:@""
+        [cell updateWithFieldValue:self.incomeType
              fieldValuePlaceholder:@"Income title"
                          inputType:DFInputCellText];
+        
+        cell.onTextInputFinish = ^(NSString* aText)
+        {
+            if (aText.length)
+            {
+                weakSelf.incomeType = aText;
+            }
+            else
+            {
+                [[UIAlertView.alloc initWithTitle:@"Error"
+                                          message:@"Invalid type"
+                                         delegate:nil
+                                cancelButtonTitle:@"Ok"
+                                otherButtonTitles:nil] show];
+                [weakSelf.tableView reloadData];
+            }
+
+        };
     }
     else
     {
-        [cell updateWithFieldValue:@""
+        [cell updateWithFieldValue:DF_TO_STR(self.incomeAmount)
              fieldValuePlaceholder:@"Income amount"
                          inputType:DFInputCellDecimalPad];
+        
+        cell.onTextInputFinish = ^(NSString* aText)
+        {
+            if (aText.isNumeric)
+            {
+                weakSelf.incomeAmount = @(aText.doubleValue);
+            }
+            else
+            {
+                [[UIAlertView.alloc initWithTitle:@"Error"
+                                          message:@"Invalid amount"
+                                         delegate:nil
+                                cancelButtonTitle:@"Ok"
+                                otherButtonTitles:nil] show];
+                [weakSelf.tableView reloadData];
+            }
+        };
     }
     
     // Configure the cell...
@@ -103,6 +149,13 @@
 
 - (void)doneAction:(id)sender
 {
+    [self.view endEditing:YES];
+    
+    DFIncome* income = DFIncome.new;
+    income.type = self.incomeType;
+    income.amount = self.incomeAmount;
+    [DFDataManager.instance addIncome:income];
+    
     if (self.dismissBlock)
         self.dismissBlock();
 }

@@ -24,5 +24,7 @@
 
 #define NilOrValue(val) [val isKindOfClass:NSNull.class] ? nil : val
 
+#define DF_TO_STR(val) [NSString stringWithFormat:@"%@", val]
+
 
 #endif

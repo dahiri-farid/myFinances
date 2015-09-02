@@ -6,5 +6,5 @@ xcodeproj 'my_finances.xcodeproj'
 inhibit_all_warnings!
 source 'https://github.com/CocoaPods/Specs.git'
 
-pod "MagicalRecord"
+pod 'MagicalRecord'
 pod 'ActionSheetPicker-3.0', '~> 1.7.1'

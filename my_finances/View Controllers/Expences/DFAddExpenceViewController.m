@@ -9,6 +9,8 @@
 #import "DFAddExpenceViewController.h"
 #import "DFInputTextCell.h"
 #import "DFSegmentedControlCell.h"
+#import "DFDataManager.h"
+#import "DFExpense.h"
 
 @interface DFAddExpenceViewController ()
 
@@ -87,6 +89,19 @@
             textCell = DFInputTextCell.cell;
         }
         cell = textCell;
+        
+        if (indexPath.row == 1)
+        {
+            [textCell updateWithFieldValue:@""
+                     fieldValuePlaceholder:@"Type"
+                                 inputType:DFInputCellText];
+        }
+        else
+        {
+            [textCell updateWithFieldValue:@""
+                     fieldValuePlaceholder:@"Amount"
+                                 inputType:DFInputCellDecimalPad];
+        }
     }
     
     return cell;

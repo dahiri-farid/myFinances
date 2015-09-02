@@ -10,6 +10,8 @@
 #import "DFMacroUtils.h"
 
 @class DFBankAccount;
+@class DFIncome;
+@class DFExpense;
 
 @interface DFDataManager : NSObject
 
@@ -17,6 +19,10 @@ DF_DECLARE_SINGLETON
 
 - (DFBankAccount*)bankAccount;
 - (void)saveBankAccount:(DFBankAccount *)aBankAccount;
+- (NSArray*)incomes;
+- (NSArray*)expenses;
+- (void)addIncome:(DFIncome*)aIncome;
+- (void)addExpense:(DFExpense*)aExpense;
 
 
 - (void)cleapUp;

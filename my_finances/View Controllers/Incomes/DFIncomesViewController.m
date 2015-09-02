@@ -9,8 +9,13 @@
 #import "DFIncomesViewController.h"
 #import "DFAddIncomeTableViewController.h"
 #import "DFTitleSubtitleCell.h"
+#import "DFDataManager.h"
+#import "DFIncome.h"
+#import "DFMacroUtils.h"
 
 @interface DFIncomesViewController ()
+
+@property (nonatomic, strong)   NSArray* datasource;
 
 @end
 
@@ -36,6 +41,13 @@
     self.title = @"Incomes";
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    self.datasource = DFDataManager.instance.incomes;
+    [self.tableView reloadData];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -51,7 +63,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return 10;
+    return self.datasource.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView
@@ -64,7 +76,10 @@
         cell = DFTitleSubtitleCell.cell;
     }
     
-    [cell updateWithTitle:@"Loan" subtitle:@"100$"];
+    DFIncome* income = self.datasource[indexPath.row];
+    
+    [cell updateWithTitle:income.type
+                 subtitle:DF_TO_STR(income.amount)];
     // Configure the cell...
     
     return cell;

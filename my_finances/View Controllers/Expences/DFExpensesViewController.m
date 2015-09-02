@@ -9,8 +9,12 @@
 #import "DFExpensesViewController.h"
 #import "DFAddExpenceViewController.h"
 #import "DFTitleSubtitleCell.h"
+#import "DFDataManager.h"
+#import "DFExpense.h"
 
 @interface DFExpensesViewController ()
+
+@property (nonatomic, strong)   NSArray* datasource;
 
 @end
 
@@ -37,6 +41,13 @@
     self.title = @"Expenses";
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    self.datasource = DFDataManager.instance.expenses;
+    [self.tableView reloadData];
+}
+
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -49,7 +60,7 @@
  numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return 10;
+    return self.datasource.count;
 }
 
 
@@ -60,8 +71,9 @@
     {
         cell = DFTitleSubtitleCell.cell;
     }
+    DFExpense* expense = self.datasource[indexPath.row];
     // Configure the cell...
-    [cell updateWithTitle:@"Fun" subtitle:@"200$"];
+    [cell updateWithTitle:expense.type subtitle:DF_TO_STR(expense.amount)];
     
     return cell;
 }
